@@ -1,0 +1,12 @@
+STEPS:
+    1. Build Docker image: docker build --tag 'tremend/task2' .
+    2. Run docker container in interactive mode: docker run -it 'tremend/task2'
+    3. Test what you have to test
+
+I'm not sure what is exactly required for bonus for this task, as the provided
+application uses just one environment variable. Anyway, Dockerfile or Docker
+Compose does not offer proper built-in means to store sensitive information in
+environment variables. To store securely such information (e.g. passwords), we
+should use Docker Secrets (in Swarm mode) or even Kubernetes. A way to enhance
+the security of passwords storage, we can encrypt the files which contain
+sensitive infomration.

@@ -2,6 +2,5 @@
 .vscode
 .gitignore
 .gitattributes
-out-etc-passwd
 README
 Dockerfile
