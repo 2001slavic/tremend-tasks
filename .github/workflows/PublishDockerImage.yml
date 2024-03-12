@@ -39,5 +39,5 @@ jobs:
         with:
           context: task-2/
           push: true
-          tags: ${GIT_COMMIT} , latest
+          tags: ${{ github.sha }} , ${{ secrets.DOCKERHUB_USERNAME }}/tremend-tasks:latest
           labels: ${{ steps.meta.outputs.labels }}
