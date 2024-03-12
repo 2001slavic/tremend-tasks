@@ -1,7 +1,15 @@
-STEPS:
+LOCAL:
     1. Build Docker image: docker build --tag 'tremend/task2' .
     2. Run docker container in interactive mode: docker run -it 'tremend/task2'
-    3. Test what you have to test
+
+DOCKERHUB:
+    1. Created Docker Hub repository
+    2. Generated access token
+    3. Copied access token to GitHub repository secrets
+    4. Studied a little about GitHub Actions
+    5. Managed to complete the task through several mistakes (see commit history)
+
+https://hub.docker.com/repository/docker/2001slavic/tremend-tasks/general
 
 I'm not sure what is exactly required for bonus for this task, as the provided
 application uses just one environment variable. Anyway, Dockerfile or Docker
