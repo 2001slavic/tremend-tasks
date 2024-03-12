@@ -39,5 +39,5 @@ jobs:
         with:
           context: task-2/
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: ${GIT_COMMIT} , latest
           labels: ${{ steps.meta.outputs.labels }}
