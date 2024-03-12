@@ -1,0 +1,4 @@
+STEPS:
+    1. Build Docker image: docker build --tag 'tremend/task1' .
+    2. Run docker container in interactive mode: docker run -it 'tremend/task1'
+    3. Test what you have to test
