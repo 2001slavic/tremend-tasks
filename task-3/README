@@ -1,0 +1,7 @@
+I've decided to compose the mysql container with an adminer database frontend
+to ease the view, debugging and inspection of the database. Also, in adminer,
+the average salary query can be tested. Two users are set up (root/admin)
+(scott/tiger). The user scott has all privileges only for 'company' database
+(see user-privileges.sql)
+
+Fixed a mistake in company.sql (commented)

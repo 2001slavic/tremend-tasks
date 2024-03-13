@@ -1,0 +1,30 @@
+version: '3.1'
+
+name: tremend
+
+services:
+
+  db:
+    container_name: tremend-db
+    build:
+      context: .
+    restart: always
+    volumes:
+      - persistent-db:/var/lib/mysql
+    networks:
+      - tremend-network
+
+  adminer:
+    container_name: tremend-adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - tremend-network
+
+networks:
+  tremend-network:
+
+volumes:
+  persistent-db:
